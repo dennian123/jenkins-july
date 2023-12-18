@@ -1,20 +1,20 @@
 variable region {
     type = string
-    default = ""
+    default = " "
 }
 variable ami_id {
     type = string
-    default = ""
+    default = " "
 }
 variable instance_type {
     type = string
-    default = ""
+    default = " "
 }
 variable az {
     type = string
-    default = ""
+    default = " "
 }
 variable key {
     type = string
-    default = ""
+    default = " "
 }
