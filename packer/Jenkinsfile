@@ -41,7 +41,7 @@ podTemplate(cloud: 'kubernetes', label: 'packer', showRawYaml: false, yaml: temp
   node("packer"){
     container("packer"){
         stage ("Checkout SCM") {
-            git branch: 'main', url: 'https://github.com/dennian123/terraform-july.git'
+            git branch: 'main', url: 'https://github.com/dennian123/jenkins-july.git'
         }  
         withCredentials([usernamePassword(credentialsId: 'aws-cred', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: 'AWS_ACCESS_KEY_ID')]){
         withEnv(["AWS_REGION=${kaizen}"]) {
