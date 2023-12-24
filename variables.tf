@@ -2,7 +2,7 @@ variable region {
     type = string
     default = " "
 }
-variable ami_id {
+variable ami_name {
     type = string
     default = " "
 }
