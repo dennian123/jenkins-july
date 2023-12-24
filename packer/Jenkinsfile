@@ -57,7 +57,7 @@ podTemplate(cloud: 'kubernetes', label: 'packer', showRawYaml: false, yaml: temp
             parameters: [
               string(name: 'action', value: 'apply'), 
               string(name: 'region', value: "${kaizen}"), 
-              string(name: 'ami_name', value: "my-ami-${buidNumber}"), 
+              string(name: 'ami_name', value: "my-ami-${buildNumber}"), 
               string(name: 'type', value: "${type}"), 
               string(name: 'az', value: "${kaizen}b"), 
               string(name: 'key', value: "${key}")]
