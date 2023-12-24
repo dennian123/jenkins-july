@@ -14,7 +14,6 @@ spec:
     name: packer
     '''
 
-
 if (env.BRANCH_NAME == "main"){
     kaizen = "us-east-1"
 }   
